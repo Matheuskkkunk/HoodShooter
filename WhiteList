@@ -1,0 +1,3 @@
+local WhiteListKeys = {
+ '2001842478'
+}
