@@ -1,0 +1,86 @@
+local Gui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Gradient = Instance.new("UIGradient")
+local Corner = Instance.new("UICorner")
+local Button = Instance.new("TextButton")
+local Corner_2 = Instance.new("UICorner")
+local Insert = Instance.new("TextBox")
+local Corner_3 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local Name = Instance.new("TextLabel")
+
+Gui.Name = "Gui"
+Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Gui
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(0.316983879, 0, 0.280291975, 0)
+Main.Size = UDim2.new(0, 500, 0, 300)
+
+Gradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(36, 36, 36)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(61, 61, 61))}
+Gradient.Name = "Gradient"
+Gradient.Parent = Main
+
+Corner.CornerRadius = UDim.new(0, 10)
+Corner.Name = "Corner"
+Corner.Parent = Main
+
+Button.Name = "Button"
+Button.Parent = Main
+Button.BackgroundColor3 = Color3.fromRGB(48, 200, 53)
+Button.Position = UDim2.new(0.300000012, 0, 0.76666671, 0)
+Button.Size = UDim2.new(0, 200, 0, 50)
+Button.Font = Enum.Font.Oswald
+Button.Text = "Enter!"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+
+Corner_2.CornerRadius = UDim.new(0, 10)
+Corner_2.Name = "Corner"
+Corner_2.Parent = Button
+
+Insert.Name = "Insert"
+Insert.Parent = Main
+Insert.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Insert.Position = UDim2.new(0.200000003, 0, 0.416666657, 0)
+Insert.Size = UDim2.new(0, 300, 0, 50)
+Insert.Font = Enum.Font.Oswald
+Insert.Text = ""
+Insert.TextColor3 = Color3.fromRGB(40, 40, 40)
+Insert.TextScaled = true
+Insert.TextSize = 14.000
+Insert.TextWrapped = true
+
+Corner_3.CornerRadius = UDim.new(0, 10)
+Corner_3.Name = "Corner"
+Corner_3.Parent = Insert
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.299999982, 0, 0.0666666701, 0)
+Title.Size = UDim2.new(0, 200, 0, 60)
+Title.Font = Enum.Font.Oswald
+Title.Text = "Key:"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Name.Name = "Name"
+Name.Parent = Main
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.0299999993, 0, 0.0260000005, 0)
+Name.Size = UDim2.new(0, 110, 0, 40)
+Name.Font = Enum.Font.Oswald
+Name.Text = "HoodShooter"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
