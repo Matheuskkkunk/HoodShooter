@@ -95,10 +95,10 @@ local Player = game:GetService('Players').LocalPlayer
 
 Button.MouseButton1Click:Connect(function()
   for Usernames, Keys in pairs(WhiteList) do
-    if Usernames == Player.Name and Insert.Text == Keys then
-        print('Succes!')
-    else
-        print('Error!')
-    end 
-end
+        if Usernames == Player.Name and Insert.Text == Keys then
+         print('Succes!')
+        else
+          print('Error!')
+        end 
+    end
 end)
